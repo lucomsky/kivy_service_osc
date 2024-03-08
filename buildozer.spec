@@ -37,7 +37,7 @@ version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,oscpy
+requirements = python3,kivy,oscpy,jnius
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -53,7 +53,7 @@ requirements = python3,kivy,oscpy
 #icon.filename = %(source.dir)s/data/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = all
+orientation = portrait, landscape
 
 # (list) List of service to declare
 services = Pong:service.py
@@ -196,7 +196,7 @@ p4a.branch = master
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86
-android.arch = armeabi-v7a
+android.archs = arm64-v8a
 
 #
 # Python for android (p4a) specific
